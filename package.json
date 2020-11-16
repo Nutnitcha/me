@@ -1,0 +1,52 @@
+{
+    "name": "routing-controllers-mvc-lit-ntml",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.ts",
+    "author": "Huskymoonmoon",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.18.1",
+        "class-validator": "^0.8.1",
+        "cors": "^2.8.4",
+        "dotenv": "^4.0.0",
+        "dotnet": "^1.1.4",
+        "kcors": "^2.2.1",
+        "koa": "^2.5.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-compress": "^3.0.0",
+        "koa-mount": "^4.0.0",
+        "koa-multer": "^1.0.2",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "koa-useragent": "^1.1.0",
+        "lit-ntml": "^2.9.0",
+        "lodash": "^4.17.20",
+        "reflect-metadata": "^0.1.12",
+        "routing-controllers": "^0.7.6",
+        "typedi": "^0.8.0",
+        "typescript": "^2.8.3"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^4.0.2",
+        "@types/kcors": "^2.2.3",
+        "@types/koa": "^2.0.44",
+        "@types/koa-bodyparser": "^4.2.0",
+        "@types/koa-compress": "^2.0.8",
+        "@types/koa-mount": "^3.0.1",
+        "@types/koa-router": "^7.0.27",
+        "@types/koa-static": "^4.0.1",
+        "@types/lodash": "^4.14.104",
+        "@types/node": "^9.6.6",
+        "nodemon": "^1.14.10",
+        "source-map-support": "^0.5.3",
+        "ts-node": "^4.1.0",
+        "tsconfig-paths": "^3.2.0",
+        "tslint": "^5.20.1",
+        "tslint-config-prettier": "^1.12.0"
+    },
+    "scripts": {
+        "dev": "nodemon --watch \"**/*\" -e ts,tsx --exec ts-node -r tsconfig-paths/register --debug=9229 ./src/server.ts",
+        "app": "ts-node -r tsconfig-paths/register ./src/server.ts"
+    }
+}
